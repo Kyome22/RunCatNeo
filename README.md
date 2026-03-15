@@ -1,4 +1,4 @@
-# RunCat One
+# RunCat Neo
 
 **A cute running cat animation on your macOS Menubar.**
 
@@ -14,19 +14,19 @@
 > - It is not intended to be a complete replacement or an upgrade of the existing RunCat, but rather an attempt to implement a new concept.
 > - Since it is currently under development for the first release, we do not accept issues or pull requests (PRs) at this time.
 
-[![Github issues](https://img.shields.io/github/issues/Kyome22/RunCatOne)](https://github.com/Kyome22/RunCatOne/issues)
-[![Github forks](https://img.shields.io/github/forks/Kyome22/RunCatOne)](https://github.com/Kyome22/RunCatOne/network/members)
-[![Github stars](https://img.shields.io/github/stars/Kyome22/RunCatOne)](https://github.com/Kyome22/RunCatOne/stargazers)
-[![Top language](https://img.shields.io/github/languages/top/Kyome22/RunCatOne)](https://github.com/Kyome22/RunCatOne/)
-[![Release](https://img.shields.io/github/v/release/Kyome22/RunCatOne)]()
-[![Github license](https://img.shields.io/github/license/Kyome22/RunCatOne)](https://github.com/Kyome22/RunCatOne/)
+[![Github issues](https://img.shields.io/github/issues/Kyome22/RunCatNeo)](https://github.com/Kyome22/RunCatNeo/issues)
+[![Github forks](https://img.shields.io/github/forks/Kyome22/RunCatNeo)](https://github.com/Kyome22/RunCatNeo/network/members)
+[![Github stars](https://img.shields.io/github/stars/Kyome22/RunCatNeo)](https://github.com/Kyome22/RunCatNeo/stargazers)
+[![Top language](https://img.shields.io/github/languages/top/Kyome22/RunCatNeo)](https://github.com/Kyome22/RunCatNeo/)
+[![Release](https://img.shields.io/github/v/release/Kyome22/RunCatNeo)]()
+[![Github license](https://img.shields.io/github/license/Kyome22/RunCatNeo)](https://github.com/Kyome22/RunCatNeo/)
 
 `Swift` `macOS` `Xcode` `RunCat`
 
 ## Requirements
 
 - Development with Xcode 26.2+
-- Compatible with macOS 26.0+
+- Compatible with macOS 26.3+
 - Written in Swift 6.2
 
 ## Architecture
@@ -36,8 +36,17 @@ Please refer to the following article for more details.
 
 https://dev.to/kyome22/luca-a-modern-architecture-for-swiftui-development-3g2i
 
+## RunCat Developers' Community
+
+This is a space for RunCat contributors to communicate closely regarding development and operations.
+We welcome anyone interested in contributing to RunCat.
+However, please note that this is a place for discussing features, not for submitting requests.
+For requests, please create an Issue according to the template.
+
+Discord: https://discord.gg/zRk9E24s
+
 ## Contributors
 
-<a href="https://github.com/Kyome22/RunCatOne/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Kyome22/RunCatOne" />
+<a href="https://github.com/Kyome22/RunCatNeo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Kyome22/RunCatNeo" />
 </a>
