@@ -57,9 +57,15 @@ let package = Package(
             swiftSettings: swiftSettings
         ),
         .testTarget(
+            name: "DataSourceTests",
+            dependencies: [
+                "DataSource"
+            ],
+            swiftSettings: swiftSettings
+        ),
+        .testTarget(
             name: "ModelTests",
             dependencies: [
-                "DataSource",
                 "Model",
             ],
             swiftSettings: swiftSettings
