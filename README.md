@@ -43,7 +43,7 @@ We welcome anyone interested in contributing to RunCat.
 However, please note that this is a place for discussing features, not for submitting requests.
 For requests, please create an Issue according to the template.
 
-Discord: https://discord.gg/zRk9E24s
+Discord: https://discord.gg/wja3mmHt9z
 
 ## Contributors
 
