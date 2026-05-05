@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1C0CC4252FAA2AC7006AA17B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0CC4242FAA2AC7006AA17B /* StoreKit.framework */; };
+		1C0CC4382FAA37D9006AA17B /* UnitTest.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 1C0CC4372FAA37D9006AA17B /* UnitTest.xctestplan */; };
 		1C9FF54C2F17FBEE00362D48 /* UserInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9FF54B2F17FBEE00362D48 /* UserInterface */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C0CC4242FAA2AC7006AA17B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1C0CC4372FAA37D9006AA17B /* UnitTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTest.xctestplan; sourceTree = "<group>"; };
 		1C9FF5312F17E9A800362D48 /* RunCatNeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunCatNeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9FF5492F17FBD000362D48 /* LocalPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LocalPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +54,7 @@
 		1C9FF5282F17E9A800362D48 = {
 			isa = PBXGroup;
 			children = (
+				1C0CC4372FAA37D9006AA17B /* UnitTest.xctestplan */,
 				1C9FF5492F17FBD000362D48 /* LocalPackage */,
 				1C9FF5332F17E9A800362D48 /* RunCatNeo */,
 				1C9FF54A2F17FBEE00362D48 /* Frameworks */,
@@ -138,6 +141,7 @@
 		1C9FF52F2F17E9A800362D48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				1C0CC4382FAA37D9006AA17B /* UnitTest.xctestplan in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
