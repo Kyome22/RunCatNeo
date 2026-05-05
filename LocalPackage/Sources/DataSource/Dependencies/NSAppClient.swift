@@ -1,5 +1,5 @@
 /*
- LoggingSystemClient.swift
+ NSAppClient.swift
  DataSource
 
  Created by Takuto Nakamura on 2026/05/05.
@@ -18,16 +18,22 @@
  limitations under the License.
  */
 
-import Logging
+import AppKit
 
-public struct LoggingSystemClient: DependencyClient {
-    public var bootstrap: @Sendable (@escaping @Sendable (String) -> any LogHandler) -> Void
+public struct NSAppClient: DependencyClient {
+    public var activate: @MainActor @Sendable (Bool) -> Void
+    public var terminate: @MainActor @Sendable (Any?) -> Void
+    public var orderFrontStandardAboutPanel: @MainActor @Sendable ([NSApplication.AboutPanelOptionKey: Any]) -> Void
 
     public static let liveValue = Self(
-        bootstrap: { LoggingSystem.bootstrap($0) }
+        activate: { NSApp.activate(ignoringOtherApps: $0) },
+        terminate: { NSApp.terminate($0) },
+        orderFrontStandardAboutPanel: { NSApp.orderFrontStandardAboutPanel(options: $0) }
     )
 
     public static let testValue = Self(
-        bootstrap: { _ in }
+        activate: { _ in },
+        terminate: { _ in },
+        orderFrontStandardAboutPanel: { _ in }
     )
 }

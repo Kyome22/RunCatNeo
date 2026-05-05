@@ -1,6 +1,15 @@
 {
-  "originHash" : "1ccbb3219e7780eda73f60d0a74d85931d10787934105519f3c0874ab1786b97",
+  "originHash" : "535b1dd9bd0c7eca4fe14fcb7baeac1e45d9c980226a1c6128cd58baf5f5c22d",
   "pins" : [
+    {
+      "identity" : "devicemodel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kyome22/DeviceModel.git",
+      "state" : {
+        "revision" : "558269eb9cc69d2e5ab5a331e82c10452b15a9af",
+        "version" : "1.2.0"
+      }
+    },
     {
       "identity" : "swift-log",
       "kind" : "remoteSourceControl",
@@ -8,6 +17,15 @@
       "state" : {
         "revision" : "bc386b95f2a16ccd0150a8235e7c69eab2b866ca",
         "version" : "1.8.0"
+      }
+    },
+    {
+      "identity" : "systeminfokit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kyome22/SystemInfoKit.git",
+      "state" : {
+        "revision" : "d8fd03664995132eecff42a1841e7f2c06e4fb2b",
+        "version" : "6.8.0"
       }
     }
   ],
