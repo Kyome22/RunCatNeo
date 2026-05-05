@@ -21,20 +21,15 @@
 import DataSource
 import SwiftUI
 
-public final class AppDependencies: Sendable {
-    public let appStateClient: AppStateClient
-    public let loggingSystemClient: LoggingSystemClient
-    public let userDefaultsClient: UserDefaultsClient
-
-    nonisolated init(
-        appStateClient: AppStateClient = .liveValue,
-        loggingSystemClient: LoggingSystemClient = .liveValue,
-        userDefaultsClient: UserDefaultsClient = .liveValue
-    ) {
-        self.appStateClient = appStateClient
-        self.loggingSystemClient = loggingSystemClient
-        self.userDefaultsClient = userDefaultsClient
-    }
+public struct AppDependencies: Sendable {
+    public var appStateClient = AppStateClient.liveValue
+    public var dataClient = DataClient.liveValue
+    public var fileManagerClient = FileManagerClient.liveValue
+    public var loggingSystemClient = LoggingSystemClient.liveValue
+    public var nsAppClient = NSAppClient.liveValue
+    public var smAppServiceClient = SMAppServiceClient.liveValue
+    public var userDefaultsClient = UserDefaultsClient.liveValue
+    public var uuidClient = UUIDClient.liveValue
 
     static let shared = AppDependencies()
 }
@@ -46,13 +41,23 @@ extension EnvironmentValues {
 extension AppDependencies {
     public static func testDependencies(
         appStateClient: AppStateClient = .testValue,
+        dataClient: DataClient = .testValue,
+        fileManagerClient: FileManagerClient = .testValue,
         loggingSystemClient: LoggingSystemClient = .testValue,
-        userDefaultsClient: UserDefaultsClient = .testValue
+        nsAppClient: NSAppClient = .testValue,
+        smAppServiceClient: SMAppServiceClient = .testValue,
+        userDefaultsClient: UserDefaultsClient = .testValue,
+        uuidClient: UUIDClient = .testValue
     ) -> AppDependencies {
         AppDependencies(
             appStateClient: appStateClient,
+            dataClient: dataClient,
+            fileManagerClient: fileManagerClient,
             loggingSystemClient: loggingSystemClient,
-            userDefaultsClient: userDefaultsClient
+            nsAppClient: nsAppClient,
+            smAppServiceClient: smAppServiceClient,
+            userDefaultsClient: userDefaultsClient,
+            uuidClient: uuidClient
         )
     }
 }
